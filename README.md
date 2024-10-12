@@ -2,7 +2,7 @@
 Ryder Bank is a bank where you can transfer and receive **FAKE** money!
 A project to demonstrate my backend skills. 🚀✨
 
-Access the application <a>here</a>.
+Access the application <a>COMING SOON</a>.
 
 # Technologies
 
