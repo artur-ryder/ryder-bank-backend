@@ -1,5 +1,6 @@
 # Ryder Bank API
-Ryder Bank is a project to demonstrate my skills. 🚀✨
+Ryder Bank is a bank where you can transfer and receive **FAKE** money!
+A project to demonstrate my backend skills. 🚀✨
 
 Access the application <a>here</a>.
 
