@@ -31,12 +31,12 @@ Start in development mode - Using Nodemon
 
 ## /users
 
+Get a user information. Must be logged in providing the cookie "authorization".
 ```js
 GET /users
 ```
-Get a user information. Must be logged in providing the cookie "authorization".
-
-
+<br></br>
+Create a user on database. Must provide username and password.
 ```js
 POST /users/create
 
@@ -45,9 +45,8 @@ POST /users/create
     "password": PASSWORD
 }
 ```
-Create a user on database. Must provide username and password.
-
-
+<br></br>
+Verify if the user exists on database. If yes, returns the authorization cookie. Must provide username and password.
 ```js
 POST /users/login
 
@@ -56,9 +55,8 @@ POST /users/login
     "password": PASSWORD
 }
 ```
-Verify if the user exists on database. If yes, returns the authorization cookie. Must provide username and password.
-
-
+<br></br>
+Delete a user. Must provide username and password.
 ```js
 POST /users/delete
 
@@ -67,18 +65,17 @@ POST /users/delete
     "password": PASSWORD
 }
 ```
-Delete a user. Must provide username and password.
-
-
+<br></br>
 ## /transactions
 
 All routes under `/transactions` require the user to be logged in.
+
+Retrieve all transactions made by or to the logged-in user.
 ```js
 GET /transactions
 ```
-Retrieve all transactions made by or to the logged-in user.
-
-
+<br></br>
+Transfer money from the user logged in to the "receiver" if "receiver" exists.
 ```js
 POST /transactions/create
 
@@ -87,7 +84,6 @@ POST /transactions/create
     "amount": QUANTITY
 }
 ```
-Transfer money from the user logged in to the "receiver" if "receiver" exists.
 
 
 
