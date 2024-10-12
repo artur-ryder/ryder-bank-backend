@@ -36,6 +36,7 @@ GET /users
 ```
 Get a user information. Must be logged in providing the cookie "authorization".
 
+
 ```js
 POST /users/create
 
@@ -45,6 +46,7 @@ POST /users/create
 }
 ```
 Create a user on database. Must provide username and password.
+
 
 ```js
 POST /users/login
@@ -56,6 +58,7 @@ POST /users/login
 ```
 Verify if the user exists on database. If yes, returns the authorization cookie. Must provide username and password.
 
+
 ```js
 POST /users/delete
 
@@ -66,6 +69,7 @@ POST /users/delete
 ```
 Delete a user. Must provide username and password.
 
+
 ## /transactions
 
 All routes under `/transactions` require the user to be logged in.
@@ -73,6 +77,7 @@ All routes under `/transactions` require the user to be logged in.
 GET /transactions
 ```
 Retrieve all transactions made by or to the logged-in user.
+
 
 ```js
 POST /transactions/create
