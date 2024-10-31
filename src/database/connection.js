@@ -4,7 +4,7 @@ const URI = process.env.MONGO_DB_CONNECTION_URI
 console.log("[DATABASE] Starting Connection...")
 
 if (!URI) {
-    throw new Error("You did not provide MONGO_DB_CONNECTION_URI on .env.");
+    throw new Error("MONGO_DB_CONNECTION_URI not provided on .env.");
 }
 
 mongoose.connect(URI).then(() => {
